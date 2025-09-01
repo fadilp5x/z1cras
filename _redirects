@@ -1,0 +1,9 @@
+# Redirect all extensionless URLs to their .html counterparts
+/vehicles      /vehicles.html    200
+/book          /book.html        200
+/blog          /blog.html        200
+
+# Handle trailing slashes
+/vehicles/     /vehicles.html    200
+/book/         /book.html        200
+/blog/         /blog.html        200

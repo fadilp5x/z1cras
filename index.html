@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z1Cars | Luxury Car Rentals & Dealership</title>
+    <meta name="description" content="Z1Cars offers premium luxury car rentals in Kerala. Experience the ultimate driving with our fleet of Range Rover, BMW, Mercedes, Audi and more.">
+    <meta name="keywords" content="Z1Cars, luxury car rental Kerala, premium car hire, Range Rover rental, BMW rental Kerala, Mercedes rental, Audi rental">
+    <meta name="author" content="Z1Cars">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.z1cars.com">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.z1cars.com/">
+    <meta property="og:title" content="Z1Cars | Luxury Car Rentals & Dealership">
+    <meta property="og:description" content="Z1Cars offers premium luxury car rentals in Kerala. Experience the ultimate driving with our fleet of Range Rover, BMW, Mercedes, Audi and more.">
+    <meta property="og:image" content="https://i.ibb.co/hRKhMQgh/Whats-App-Image-2025-08-31-at-03-14-20-bc96ac1f-removebg-preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.z1cars.com/">
+    <meta property="twitter:title" content="Z1Cars | Luxury Car Rentals & Dealership">
+    <meta property="twitter:description" content="Z1Cars offers premium luxury car rentals in Kerala. Experience the ultimate driving with our fleet of Range Rover, BMW, Mercedes, Audi and more.">
+    <meta property="twitter:image" content="https://i.ibb.co/hRKhMQgh/Whats-App-Image-2025-08-31-at-03-14-20-bc96ac1f-removebg-preview.png">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CarRental",
+      "name": "Z1Cars",
+      "image": "https://i.ibb.co/hRKhMQgh/Whats-App-Image-2025-08-31-at-03-14-20-bc96ac1f-removebg-preview.png",
+      "@id": "https://www.z1cars.com",
+      "url": "https://www.z1cars.com",
+      "telephone": "+919645177177",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kerala",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "10.8505",
+        "longitude": "76.2711"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "₹20,000 - ₹2,00,000"
+    }
+    </script>
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#0F1115">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Z1Cars">
+    <link rel="apple-touch-icon" href="https://i.ibb.co/hRKhMQgh/Whats-App-Image-2025-08-31-at-03-14-20-bc96ac1f-removebg-preview.png">
+    <link rel="manifest" href="manifest.json">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --matte-black: #0B0B0C;
+            --jet-black: #0F1115;
+            --charcoal: #1A1D23;
+            --champagne-gold: #C9A635;
+            --polished-gold: #FFD700;
+            --cool-gray: #D5D8DF;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--matte-black);
+            color: #FFFFFF;
+            letter-spacing: -0.01em;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* Video Background Container */
+        .video-container {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .video-iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100vw;
+            height: 100vh;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            z-index: 1;
+        }
+        
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 2;
+        }
+        
+        .hero-content {
+            position: relative;
+            text-align: center;
+            color: white;
+            z-index: 3;
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 20px;
+            animation: fadeInUp 1.2s ease-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes countUp {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .hero-title {
+            animation: fadeInUp 1s ease-out 0.3s both;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .hero-subtitle {
+            animation: fadeInUp 1s ease-out 0.6s both;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .hero-buttons {
+            animation: fadeInUp 1s ease-out 0.9s both;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            border: 1px solid var(--champagne-gold);
+            padding: 0.75rem 1.5rem;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+            background: transparent;
+            transition: all 0.3s ease;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        .btn-primary:hover {
+            background: var(--champagne-gold);
+            color: var(--matte-black);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(201, 166, 53, 0.3);
+            animation: pulse 1.5s infinite;
+        }
+        
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+            border: none;
+        }
+        
+        .btn-whatsapp:hover {
+            background: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(18, 140, 126, 0.3);
+        }
+        
+        /* Navbar styling */
+        .navbar-logo {
+            height: 40px;
+            width: auto;
+            filter: drop-shadow(0 0 5px rgba(201, 166, 53, 0.5));
+        }
+        
+        .brand-name {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: #FFD700;
+            margin-left: 12px;
+            letter-spacing: 0.05em;
+        }
+        
+        .nav-item {
+            position: relative;
+            color: var(--cool-gray);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 0.5rem 0;
+            margin: 0 1rem;
+        }
+        
+        .nav-item:hover {
+            color: var(--champagne-gold);
+        }
+        
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--champagne-gold);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-item:hover::after {
+            width: 100%;
+        }
+        
+        /* Vehicle cards */
+        .vehicle-card {
+            background: var(--jet-black);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+            border: 1px solid rgba(26, 29, 35, 0.6);
+            transition: all 0.3s ease;
+        }
+        
+        .vehicle-card:hover {
+            transform: scale(1.02) translateY(-5px);
+            border-color: rgba(201, 166, 53, 0.5);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.45);
+        }
+        
+        .vehicle-card img {
+            transition: transform 0.5s ease;
+        }
+        
+        .vehicle-card:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Other styles */
+        .form-input {
+            background: var(--jet-black);
+            border: 1px solid var(--charcoal);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            color: white;
+            width: 100%;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--champagne-gold);
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--cool-gray);
+        }
+        
+        /* Scroll Down Indicator Styles */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: white;
+            z-index: 10;
+            animation: bounce 2s infinite;
+        }
+        .scroll-indicator p {
+            font-size: 1rem;
+            font-weight: 300;
+            margin-bottom: 5px;
+        }
+        .mouse {
+            width: 25px;
+            height: 40px;
+            border: 2px solid white;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .wheel {
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 8px;
+            background-color: white;
+            border-radius: 2px;
+            animation: scroll 1.5s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0) translateX(-50%);
+            }
+            40% {
+                transform: translateY(-10px) translateX(-50%);
+            }
+            60% {
+                transform: translateY(-5px) translateX(-50%);
+            }
+        }
+        @keyframes scroll {
+            0% {
+                top: 5px;
+                opacity: 0;
+            }
+            40% {
+                opacity: 1;
+            }
+            80% {
+                top: 25px;
+                opacity: 0;
+            }
+            100% {
+                top: 25px;
+                opacity: 0;
+            }
+        }
+        
+        /* Browse Button Styles */
+        .browse-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2rem;
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: white;
+            background-color: #FFD700; /* Golden color */
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+        }
+        .browse-button:hover {
+            background-color: #E6C200;
+            transform: translateY(-2px);
+        }
+        .browse-button .icon-left {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+        
+        /* FAQ Section Styles */
+        .faq-section {
+            background-color: var(--charcoal);
+            padding: 4rem 0;
+        }
+        
+        .faq-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        .faq-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .faq-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .faq-title p {
+            color: var(--cool-gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .faq-item {
+            background: var(--jet-black);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            background: var(--jet-black);
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: rgba(201, 166, 53, 0.2);
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background: var(--jet-black);
+        }
+        
+        .faq-answer-content {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--cool-gray);
+            line-height: 1.6;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+        
+        /* Testimonials Section Styles */
+        .testimonials-section {
+            padding: 4rem 0;
+            background-color: var(--jet-black);
+        }
+        
+        .testimonials-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        .testimonials-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .testimonials-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .testimonials-title p {
+            color: var(--cool-gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial-card {
+            background: var(--charcoal);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+            border: 1px solid rgba(26, 29, 35, 0.6);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(201, 166, 53, 0.5);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.45);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: var(--cool-gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            position: relative;
+        }
+        
+        .testimonial-text::before {
+            content: '"';
+            font-size: 4rem;
+            color: rgba(201, 166, 53, 0.3);
+            position: absolute;
+            top: -1.5rem;
+            left: -1rem;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--champagne-gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: var(--matte-black);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .author-info h4 {
+            color: white;
+            margin-bottom: 0.2rem;
+        }
+        
+        .author-info p {
+            color: var(--cool-gray);
+            font-size: 0.9rem;
+        }
+        
+        .rating {
+            color: var(--champagne-gold);
+            margin-bottom: 1rem;
+        }
+        
+        /* Stats Section */
+        .stats-section {
+            background: var(--charcoal);
+            padding: 4rem 0;
+        }
+        
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--jet-black);
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-icon {
+            font-size: 2.5rem;
+            color: var(--champagne-gold);
+            margin-bottom: 1rem;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: var(--cool-gray);
+            font-size: 1rem;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+            
+            .brand-name {
+                font-size: 1.5rem;
+            }
+            
+            .nav-item {
+                margin: 0 0.5rem;
+                font-size: 0.9rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-content {
+                width: 95%;
+            }
+            
+            .hero-content h1 {
+                font-size: 2rem;
+                line-height: 1.2;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .btn-primary {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .brand-name {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-matte-black text-white">
+    <!-- Public Site -->
+    <div id="public-site">
+        <!-- Header -->
+        <header class="bg-jet-black py-4 px-6 sticky top-0 z-50 shadow-lg">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center">
+                        <img src="https://i.ibb.co/hRKhMQgh/Whats-App-Image-2025-08-31-at-03-14-20-bc96ac1f-removebg-preview.png" alt="Z1CARS Logo" class="navbar-logo">
+                        <span class="brand-name">Z1Cars</span>
+                    </a>
+                </div>
+                
+                <nav class="hidden md:flex space-x-2">
+                    <a href="#" class="nav-item">Home</a>
+                    <a href="vehicles.html" class="nav-item">Legal Vehicle Rentals</a>
+                    <a href="book.html" class="nav-item">Booking</a>
+                    <a href="blog.html" class="nav-item">Blog</a>
+                </nav>
+                
+                <div class="flex items-center space-x-4">
+                    <button id="user-menu-btn" class="text-cool-gray hover:text-champagne-gold">
+                        <i class="fas fa-user-circle text-xl"></i>
+                    </button>
+                    <button class="md:hidden text-cool-gray">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section with Video Background -->
+        <section class="relative">
+            <div class="video-container">
+                <iframe 
+                    id="heroVideo"
+                    class="video-iframe"
+                    src=""
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <div class="video-overlay"></div>
+                
+                <div class="hero-content">
+                    <h1 class="hero-title text-4xl md:text-5xl font-bold mb-6 leading-tight">Experience Luxury <span class="text-champagne-gold">Performance</span></h1>
+                    <p class="hero-subtitle text-cool-gray text-xl mb-8">Premium luxury and sports car rentals with unparalleled service and exclusive vehicles.</p>
+                    <div class="hero-buttons flex flex-col sm:flex-row gap-4">
+                        <a href="vehicles.html" class="btn-primary">
+                            Explore Garage
+                        </a>
+                        <a href="book.html" class="btn-primary">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="scroll-indicator">
+                    <p>Scroll Down</p>
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stats-container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="stat-number" data-target="150">0</div>
+                        <div class="stat-label">Premium Vehicles</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number" data-target="5000">0</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="stat-number" data-target="12">0</div>
+                        <div class="stat-label">Cities in Kerala</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="stat-number" data-target="10">0</div>
+                        <div class="stat-label">Years of Excellence</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vehicles Section -->
+        <section id="vehicles" class="py-16 px-6 bg-jet-black">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12">Popular Rentals & Luxury Vehicles</h2>
+                
+                <div class="text-center mt-8 mb-12">
+                    <a href="vehicles.html" class="browse-button">
+                        <i class="fa-solid fa-car-side icon-left"></i>
+                        Browse Full Vehicles List
+                    </a>
+                </div>
+                
+                <!-- Filters -->
+                <div class="bg-charcoal rounded-xl p-6 mb-8">
+                    <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                        <div>
+                            <label class="form-label">Brand</label>
+                            <select class="form-input">
+                                <option value="">All Brands</option>
+                                <option value="RangeRover">Range Rover</option>
+                                <option value="porsche">Porsche</option>
+                                <option value="bmw">BMW</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                                <option value="toyota">Toyota</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="form-label">Transmission</label>
+                            <select class="form-input">
+                                <option value="">Any</option>
+                                <option value="automatic">Automatic</option>
+                                <option value="manual">Manual</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="form-label">Fuel Type</label>
+                            <select class="form-input">
+                                <option value="">Any</option>
+                                <option value="petrol">Petrol</option>
+                                <option value="diesel">Diesel</option>
+                                <option value="hybrid">Hybrid</option>
+                                <option value="electric">Electric</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="form-label">Seats</label>
+                            <select class="form-input">
+                                <option value="">Any</option>
+                                <option value="2">2 Seats</option>
+                                <option value="4">4 Seats</option>
+                                <option value="5">5+ Seats</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="form-label">Year</label>
+                            <select class="form-input">
+                                <option value="">Any Year</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vehicles Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Vehicle cards will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 px-6 bg-charcoal">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Ready to Experience Luxury?</h2>
+                <p class="text-cool-gray text-xl mb-10 max-w-2xl mx-auto">Book your premium luxury vehicle today and experience the ultimate driving experience with Z1Cars.</p>
+                <a href="https://wa.me/919645177177?text=Hi%20Z1Cars,%20I%20would%20like%20to%20inquire%20about%20renting%20a%20luxury%20vehicle." 
+                   target="_blank"
+                   class="btn-primary btn-whatsapp inline-flex items-center">
+                    <i class="fab fa-whatsapp mr-2"></i> Message us on WhatsApp
+                </a>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="faq-container">
+                <div class="faq-title">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Find answers to common questions about our luxury car rental services in Kerala</p>
+                </div>
+                
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What documents are required to rent a car?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                To rent a car from Z1Cars, you'll need a valid driving license, proof of identity (Aadhaar card, passport, or voter ID), and a credit/debit card for security deposit. For tourists, a valid passport and international driving permit are required.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What is the minimum age requirement for renting?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                The minimum age to rent a car from Z1Cars is 21 years. For premium and luxury vehicles, the minimum age requirement is 25 years. All drivers must have a valid driving license with at least one year of driving experience.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Do you offer chauffeur services?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Yes, Z1Cars offers professional chauffeur services for all our vehicles. Our chauffeurs are experienced, well-trained, and familiar with all routes across Kerala. This service is available at an additional cost.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What is your cancellation policy?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                You can cancel your booking up to 24 hours before the pickup time for a full refund. Cancellations made less than 24 hours before pickup will incur a cancellation fee of 50% of the rental amount.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Is fuel included in the rental price?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                All our vehicles come with a full tank of fuel. You are expected to return the car with the same fuel level. If you return the car with less fuel, a refueling charge will be applied. Alternatively, you can opt for our prepaid fuel option.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Do you offer long-term rentals?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Yes, Z1Cars offers special rates for weekly and monthly rentals. Long-term rentals come with significant discounts compared to daily rates. Please contact us via WhatsApp or call for custom quotes on long-term rentals.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="testimonials-container">
+                <div class="testimonials-title">
+                    <h2>What Our Customers Say</h2>
+                    <p>Read testimonials from our satisfied customers across Kerala</p>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            Exceptional service from Z1Cars! The Range Rover was in pristine condition and made our wedding day truly special. The chauffeur was professional and punctual. Highly recommended!
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">AK</div>
+                            <div class="author-info">
+                                <h4>Anjali Krishnan</h4>
+                                <p>Wedding Rental, Kochi</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            I rented a BMW X5 for a business trip to Trivandrum. The booking process was seamless, and the car was delivered to my hotel on time. The vehicle was immaculate and the customer service was outstanding.
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">RP</div>
+                            <div class="author-info">
+                                <h4>Rajesh Pillai</h4>
+                                <p>Business Rental, Trivandrum</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            Our family vacation in Kerala was made even more memorable with the Toyota Fortuner we rented from Z1Cars. The car was comfortable, well-maintained, and perfect for exploring Kerala's scenic routes. Great value for money!
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SM</div>
+                            <div class="author-info">
+                                <h4>Suresh Menon</h4>
+                                <p>Family Vacation, Munnar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-jet-black pt-12 pb-6 px-6">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Z1CARS</h3>
+                        <p class="text-cool-gray mb-4">Premium luxury and sports car rentals with unparalleled service and exclusive vehicles.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-cool-gray hover:text-champagne-gold"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-cool-gray hover:text-champagne-gold"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-cool-gray hover:text-champagne-gold"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-cool-gray hover:text-champagne-gold"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-cool-gray hover:text-champagne-gold">Home</a></li>
+                            <li><a href="vehicles.html" class="text-cool-gray hover:text-champagne-gold">Our Fleet</a></li>
+                            <li><a href="vehicles.html" class="text-cool-gray hover:text-champagne-gold">Luxury Vehicles</a></li>
+                            <li><a href="book.html" class="text-cool-gray hover:text-champagne-gold">Bookings</a></li>
+                            <li><a href="blog.html" class="text-cool-gray hover:text-champagne-gold">Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Services</h3>
+                        <ul class="space-y-2">
+                            <li><a href="vehicles.html" class="text-cool-gray hover:text-champagne-gold">Legal Car Rental</a></li>
+                            <li><a href="vehicles.html" class="text-cool-gray hover:text-champagne-gold">Chauffeur Services</a></li>
+                            <li><a href="vehicles.html" class="text-cool-gray hover:text-champagne-gold">Event Transportation</a></li>
+                            <li><a href="vehicles.html" class="text-cool-gray hover:text-champagne-gold">Corporate Rentals</a></li>
+                            <li><a href="vehicles.html" class="text-cool-gray hover:text-champagne-gold">Car Sales</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Contact Info</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-champagne-gold mt-1 mr-3"></i>
+                                <span class="text-cool-gray">123 Luxury Avenue, Premium City</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone-alt text-champagne-gold mr-3"></i>
+                                <span class="text-cool-gray">+91 96451 77177</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope text-champagne-gold mr-3"></i>
+                                <span class="text-cool-gray">z1cardeals@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="border-t border-charcoal pt-6">
+                    <p class="text-cool-gray text-sm text-center">© 2023 Z1Cars. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Sample vehicle data
+        const vehicles = [
+            {
+                id: 1,
+                name: "Land Rover Defender",
+                brand: "RangeRover",
+                year: 2025,
+                mileage: 12000,
+                fuelType: "Diesel",
+                transmission: "Automatic",
+                seatingCapacity: 6,
+                description: "Land Rover Defender Kerala Registration",
+                images: [
+                    "https://i.ibb.co/C5L5T19y/DEF-26-MY-TROPHY-EDITION-GREEN-190625-02b.jpg"
+                ],
+                status: "active"
+            },
+            {
+                id: 2,
+                name: "Range Rover Sport",
+                brand: "RangeRover",
+                year: 2020,
+                mileage: 8000,
+                fuelType: "Diesel",
+                transmission: "Automatic",
+                seatingCapacity: 5,
+                description: "The Range Rover Sport Kerala registration, Good engine condition.",
+                images: [
+                    "https://i.ibb.co/fGtxywBZ/RRS-First-Edition-P530-23-MY-070922-01.jpg"
+                ],
+                status: "active"
+            },
+            {
+                id: 3,
+                name: "Mercedes-Benz GLS 350 d",
+                brand: "mercedes",
+                year: 2016,
+                mileage: 5000,
+                fuelType: "Diesel",
+                transmission: "Automatic",
+                seatingCapacity: 8,
+                description: "Mercedes-Benz GLS 350 d Business Class",
+                images: [
+                    "https://i.ibb.co/twDq3Z4S/Medium-42481-23-C0118004.jpg"
+                ],
+                status: "active"
+            },
+            {
+                id: 4,
+                name: "BMW X5",
+                brand: "bmw",
+                year: 2021,
+                mileage: 15000,
+                fuelType: "Diesel",
+                transmission: "Automatic",
+                seatingCapacity: 7,
+                description: "The BMW X5 is a mid-size luxury SUV. It provides a combination of performance, luxury, and practicality with BMW's signature driving dynamics.",
+                images: [
+                    "https://i.ibb.co/8nMM7tq7/X5.png"
+                ],
+                status: "active"
+            },
+            {
+                id: 5,
+                name: "Porsche Cayenne",
+                brand: "porsche",
+                year: 2019,
+                mileage: 10000,
+                fuelType: "Diesel",
+                transmission: "Automatic",
+                seatingCapacity: 5,
+                description: "Luxury SUV with exceptional performance and comfort.",
+                images: [
+                    "https://i.ibb.co/6JD1XL93/Gemini-Generated-Image-vriz2svriz2svriz.png"
+                ],
+                status: "active"
+            }
+        ];
+
+        // DOM elements
+        const vehiclesGrid = document.querySelector('#vehicles .grid');
+        const heroVideo = document.getElementById('heroVideo');
+
+        // Video playlist functionality
+        const videos = [
+            {
+                src: "https://player.vimeo.com/video/969707657?autoplay=1&muted=1&background=1&playsinline=1&loop=0",
+                startTime: 15,
+                endTime: 35
+            },
+            {
+                src: "https://player.vimeo.com/video/707781618?autoplay=1&muted=1&background=1&playsinline=1&loop=0",
+                startTime: 5,
+                endTime: 35
+            }
+        ];
+        
+        let currentVideoIndex = 0;
+        
+        function loadVideo(index) {
+            const video = videos[index];
+            heroVideo.src = video.src;
+            
+            // Use postMessage to control the Vimeo player
+            setTimeout(() => {
+                const iframe = document.querySelector('#heroVideo');
+                if (iframe) {
+                    iframe.contentWindow.postMessage({
+                        method: "setCurrentTime",
+                        value: video.startTime
+                    }, "https://player.vimeo.com");
+                    
+                    iframe.contentWindow.postMessage({
+                        method: "play"
+                    }, "https://player.vimeo.com");
+                }
+            }, 1000);
+            
+            // Switch to next video after the duration
+            setTimeout(() => {
+                currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+                loadVideo(currentVideoIndex);
+            }, (video.endTime - video.startTime) * 1000);
+        }
+        
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            renderVehicles();
+            initializeFAQ();
+            initializeCounters();
+            loadVideo(currentVideoIndex);
+        });
+
+        // Render vehicles on the public site
+        function renderVehicles() {
+            if (!vehiclesGrid) return;
+            
+            vehiclesGrid.innerHTML = '';
+            
+            vehicles.forEach(vehicle => {
+                const vehicleCard = document.createElement('div');
+                vehicleCard.className = 'vehicle-card overflow-hidden rounded-lg transition-all duration-300 hover:shadow-xl';
+                
+                vehicleCard.innerHTML = `
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="${vehicle.images[0]}" alt="${vehicle.name}" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                        <div class="absolute top-4 right-4 bg-champagne-gold text-matte-black px-3 py-1 rounded-full text-sm font-semibold">
+                            ${vehicle.year}
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">${vehicle.name}</h3>
+                        <p class="text-cool-gray mb-4">${vehicle.description}</p>
+                        <div class="flex justify-between items-center mb-4">
+                            
+                            
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-cool-gray text-sm">Fuel: </span>
+                                <span class="font-semibold">${vehicle.fuelType}</span>
+                            </div>
+                            <div>
+                                <span class="text-cool-gray text-sm">Transmission: </span>
+                                <span class="font-semibold">${vehicle.transmission}</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex justify-between">
+                            <a href="vehicles" class="text-champagne-gold hover:text-polished-gold font-medium flex items-center">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                            <a href="book.html" class="bg-champagne-gold hover:bg-polished-gold text-matte-black px-4 py-2 rounded-md font-medium transition-colors">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+                `;
+                
+                vehiclesGrid.appendChild(vehicleCard);
+            });
+        }
+
+        // Initialize FAQ functionality
+        function initializeFAQ() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Toggle active class
+                    item.classList.toggle('active');
+                    
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        }
+
+        // Initialize counter animation
+        function initializeCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            
+            // Function to animate counter
+            function animateCounter(counter) {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / 200;
+                
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(() => animateCounter(counter), 10);
+                } else {
+                    counter.innerText = target;
+                }
+            }
+            
+            // Use Intersection Observer to trigger animation when visible
+            const observerOptions = {
+                threshold: 0.7
+            };
+            
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        animateCounter(counter);
+                        observer.unobserve(counter);
+                    }
+                });
+            }, observerOptions);
+            
+            counters.forEach(counter => {
+                observer.observe(counter);
+            });
+        }
+    </script>
+</body>
+</html>
