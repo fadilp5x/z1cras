@@ -12,7 +12,7 @@
     <link rel="manifest" href="manifest.json">
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.z1cars.in/vehicles.html">
+<meta property="og:url" content="https://www.z1cars.in/vehicles">
 <meta property="og:title" content="Z1 Cars - Premium Vehicle Fleet | Luxury Car Rental in Kerala">
 <meta property="og:description" content="Explore our premium fleet of luxury vehicles including Range Rover, BMW, Mercedes, Audi, and Toyota. Best rates for car rental in Kerala.">
 <meta property="og:image" content="https://i.ibb.co/27qbD3hQ/Chat-GPT-Image-Aug-31-2025-01-08-03-AM.png">
@@ -21,7 +21,7 @@
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://www.z1cars.in/vehicles.html">
+<meta property="twitter:url" content="https://www.z1cars.in/vehicles">
 <meta property="twitter:title" content="Z1 Cars - Premium Vehicle Fleet | Luxury Car Rental in Kerala">
 <meta property="twitter:description" content="Explore our premium fleet of luxury vehicles including Range Rover, BMW, Mercedes, Audi, and Toyota. Best rates for car rental in Kerala.">
 <meta property="twitter:image" content="https://i.ibb.co/27qbD3hQ/Chat-GPT-Image-Aug-31-2025-01-08-03-AM.png">
@@ -395,7 +395,7 @@
         }
         
         .btn-offer:hover {
-            background-color: #128C7E;
+            background: #128C7E;
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
         }
@@ -485,6 +485,7 @@
         
         .filter-title i {
             margin-right: 10px;
+            color: #2b5876;
         }
         
         .filter-options {
@@ -755,17 +756,17 @@
     <nav class="navbar">
         <div class="navbar-container">
             <div class="navbar-brand">
-                <a href="index" class="flex items-center">
+                <a href="/" class="flex items-center">
                     <img src="https://i.ibb.co/hRKhMQgh/Whats-App-Image-2025-08-31-at-03-14-20-bc96ac1f-removebg-preview.png" alt="Z1CARS Logo" class="navbar-logo">
                     <span class="brand-name">Z1Cars</span>
                 </a>
             </div>
             
             <ul class="navbar-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="vehicles.html" class="active">Vehicles</a></li>
-                <li><a href="book.html">Booking</a></li>
-                <li><a href="index.html">About Us</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/vehicles" class="active">Vehicles</a></li>
+                <li><a href="/book">Booking</a></li>
+                <li><a href="/">About Us</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
             
@@ -874,7 +875,7 @@
         </div>
         
         <div class="book-now-container">
-            <a href="book" class="book-now-btn">
+            <a href="/book" class="book-now-btn">
                 <i class="fas fa-calendar-check"></i> Book Your Car Now
             </a>
         </div>
@@ -1450,7 +1451,7 @@
         generateCarCards(carData);
     </script>
 <!-- Book Now Floating Button -->
-<a href="book.html" class="book-now-float">
+<a href="/book" class="book-now-float">
   <i class="fas fa-calendar-check"></i> Book Now
 </a>
 
@@ -1488,6 +1489,15 @@
       font-size: 0.9rem;
     }
   }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
 </style>
 <script>
   // Register service worker for PWA
@@ -1506,5 +1516,3 @@
 </body>
 
 </html>
-
-
