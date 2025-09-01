@@ -1,4 +1,4 @@
-const CACHE_NAME = 'z1cars-cache-v1';
+const CACHE_NAME = 'z1cars-v2'; // Change version to force update
 const urlsToCache = [
   '/',
   '/index.html',
@@ -49,4 +49,5 @@ self.addEventListener('activate', event => {
       );
     })
   );
+
 });
