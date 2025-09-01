@@ -1,3 +1,29 @@
 User-agent: *
 Allow: /
-Sitemap: https://z1cars.com/sitemap.xml
+
+# Sitemap
+Sitemap: https://z1cars.in/sitemap.xml
+
+# Mobile and AMP versions
+Allow: /m/
+Allow: /amp/
+
+# Disallow bot crawling for specific directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Crawl delay for some bots
+Crawl-delay: 1
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
