@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Car Rental API Schema",
+  "description": "Schema for validating car rental data in API requests",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Car name"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 1900,
+      "maximum": 2100
+    },
+    "image": {
+      "type": "string",
+      "format": "uri"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "vehicleConfiguration": {
+      "type": "string"
+    },
+    "fuelType": {
+      "type": "string",
+      "enum": ["Diesel", "Petrol", "Hybrid", "Electric"]
+    },
+    "numberOfDoors": {
+      "type": "integer",
+      "minimum": 2,
+      "maximum": 8
+    },
+    "vehicleInteriorType": {
+      "type": "string"
+    },
+    "vehicleSeatingCapacity": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 20
+    },
+    "vehicleTransmission": {
+      "type": "string",
+      "enum": ["Automatic", "Manual", "CVT"]
+    },
+    "mileageFromOdometer": {
+      "type": "string",
+      "pattern": "^\\d+$"
+    },
+    "standardPackage": {
+      "type": "string"
+    },
+    "extraKm": {
+      "type": "string",
+      "pattern": "^\\d+ INR\\/km$"
+    },
+    "extraHour": {
+      "type": "string",
+      "pattern": "^\\d+ INR\\/hr$"
+    },
+    "rate": {
+      "type": "string",
+      "pattern": "^\\d+ INR \\/Day$"
+    },
+    "driverBata": {
+      "type": "string",
+      "pattern": "^\\d+ INR$"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name", "year", "image", "brand", "model", "vehicleConfiguration",
+    "fuelType", "numberOfDoors", "vehicleInteriorType", "vehicleSeatingCapacity",
+    "vehicleTransmission", "mileageFromOdometer", "standardPackage",
+    "extraKm", "extraHour", "rate", "driverBata", "description"
+  ]
+}
