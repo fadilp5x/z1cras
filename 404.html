@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Z1 Cars - Premium Car Rental in Kerala</title>
+    <meta name="description" content="Oops! The page you're looking for doesn't exist. Z1 Cars offers premium luxury car rental services in Kerala.">
+    <link rel="canonical" href="https://www.z1cars.in/404">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#0F1115">
+    <meta name="theme-color" content="#0F1115">
+    
+    <!-- CSS -->
+    <style>
+        :root {
+            --matte-black: #0B0B0C;
+            --jet-black: #0F1115;
+            --charcoal: #1A1D23;
+            --champagne-gold: #C9A635;
+            --polished-gold: #FFD700;
+            --cool-gray: #D5D8DF;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background-color: var(--matte-black);
+            color: #FFFFFF;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .error-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            color: var(--champagne-gold);
+            line-height: 1;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 20px rgba(201, 166, 53, 0.3);
+        }
+        
+        .error-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+        
+        .error-message {
+            font-size: 1.2rem;
+            color: var(--cool-gray);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .error-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            margin-top: 2rem;
+        }
+        
+        .btn-primary {
+            display: inline-block;
+            background: var(--champagne-gold);
+            color: var(--matte-black);
+            padding: 1rem 2rem;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+        
+        .btn-primary:hover {
+            background: var(--polished-gold);
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            display: inline-block;
+            background: transparent;
+            color: var(--champagne-gold);
+            border: 2px solid var(--champagne-gold);
+            padding: 1rem 2rem;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+        
+        .btn-secondary:hover {
+            background: var(--champagne-gold);
+            color: var(--matte-black);
+        }
+        
+        .error-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .feature {
+            background: var(--jet-black);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(201, 166, 53, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .feature:hover {
+            border-color: var(--champagne-gold);
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            color: var(--champagne-gold);
+            margin-bottom: 1rem;
+        }
+        
+        .feature-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+        
+        .feature-description {
+            color: var(--cool-gray);
+            font-size: 0.9rem;
+        }
+        
+        .countdown {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: rgba(201, 166, 53, 0.1);
+            border-radius: 8px;
+            border: 1px solid rgba(201, 166, 53, 0.3);
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .countdown-text {
+            color: var(--cool-gray);
+            margin-bottom: 0.5rem;
+        }
+        
+        .countdown-timer {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--champagne-gold);
+        }
+        
+        .footer {
+            margin-top: auto;
+            padding: 2rem 0;
+            text-align: center;
+            color: var(--cool-gray);
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 6rem;
+            }
+            
+            .error-title {
+                font-size: 2rem;
+            }
+            
+            .error-message {
+                font-size: 1rem;
+            }
+            
+            .error-actions {
+                width: 100%;
+            }
+            
+            .btn-primary, .btn-secondary {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Oops! Page Not Found</h1>
+        <p class="error-message">
+            The page you're looking for might have been removed, had its name changed, 
+            or is temporarily unavailable. But don't worry, our premium luxury cars are still available for you!
+        </p>
+        
+        <div class="error-features">
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-car"></i>
+                </div>
+                <h3 class="feature-title">Premium Fleet</h3>
+                <p class="feature-description">Choose from Range Rover, BMW, Mercedes, Audi and more luxury vehicles</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-tags"></i>
+                </div>
+                <h3 class="feature-title">Best Rates</h3>
+                <p class="feature-description">Competitive pricing with transparent policies and no hidden charges</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3 class="feature-title">24/7 Service</h3>
+                <p class="feature-description">Round the clock customer support for all your rental needs</p>
+            </div>
+        </div>
+        
+        <div class="error-actions">
+            <a href="/vehicles" class="btn-primary">
+                <i class="fas fa-car"></i> View Our Fleet
+            </a>
+            <a href="/" class="btn-secondary">
+                <i class="fas fa-home"></i> Go to Homepage
+            </a>
+        </div>
+        
+        <div class="countdown">
+            <p class="countdown-text">You'll be redirected to our vehicle fleet in:</p>
+            <div class="countdown-timer" id="countdown">10 seconds</div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2023 Z1Cars. All rights reserved.</p>
+        <p>Contact us: <a href="tel:+919645177177" style="color: var(--champagne-gold);">+91 96451 77177</a></p>
+    </div>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Redirect Script -->
+    <script>
+        // Countdown timer
+        let timeLeft = 10;
+        const countdownElement = document.getElementById('countdown');
+        
+        const countdownInterval = setInterval(() => {
+            timeLeft--;
+            
+            if (timeLeft <= 0) {
+                clearInterval(countdownInterval);
+                window.location.href = '/vehicles';
+            } else {
+                countdownElement.textContent = `${timeLeft} second${timeLeft !== 1 ? 's' : ''}`;
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
