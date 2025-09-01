@@ -1382,6 +1382,81 @@
             });
         }
     </script>
+<script>
+  // Register service worker for PWA
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        })
+        .catch(error => {
+          console.log('ServiceWorker registration failed: ', error);
+        });
+    });
+  }
+</script>
+<!-- Book Now Floating Button -->
+<a href="book.html" class="book-now-float">
+  <i class="fas fa-calendar-check"></i> Book Now
+</a>
+
+<style>
+  .book-now-float {
+    position: fixed;
+    bottom: 90px; /* Positioned above WhatsApp button */
+    right: 20px;
+    background: var(--champagne-gold);
+    color: var(--matte-black);
+    padding: 12px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .book-now-float:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  .book-now-float i {
+    margin-right: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .book-now-float {
+      padding: 10px 16px;
+      font-size: 0.9rem;
+    }
+  }
+</style>
+<script>
+  // Redirect to vehicles.html after 15 seconds of inactivity
+  let idleTimer;
+  const idleTime = 15000; // 15 seconds in milliseconds
+  
+  function resetIdleTimer() {
+    clearTimeout(idleTimer);
+    idleTimer = setTimeout(() => {
+      window.location.href = 'vehicles.html';
+    }, idleTime);
+  }
+  
+  // Reset timer on user activity
+  window.addEventListener('load', resetIdleTimer);
+  window.addEventListener('mousemove', resetIdleTimer);
+  window.addEventListener('keypress', resetIdleTimer);
+  window.addEventListener('scroll', resetIdleTimer);
+  window.addEventListener('click', resetIdleTimer);
+  window.addEventListener('touchstart', resetIdleTimer);
+</script>
 </body>
 
 </html>
+
