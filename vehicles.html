@@ -8,19 +8,27 @@
     <meta name="keywords" content="Z1 Cars, car rental Kerala, affordable car rental, luxury car rental, Range Rover rental, BMW rental Kerala">
     <meta name="author" content="Z1 Cars">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.z1cars.com">
+    <link rel="canonical" href="https://www.z1cars.in">
     <link rel="manifest" href="manifest.json">
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<meta name="msapplication-TileColor" content="#0F1115">
+<meta name="theme-color" content="#0F1115">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.z1cars.com/">
+    <meta property="og:url" content="https://www.z1cars.in/">
     <meta property="og:title" content="Z1 Cars - Premium Car Rental Services in Kerala">
     <meta property="og:description" content="Luxury car rental services in Kerala at affordable prices. Range Rover, BMW, Mercedes, Audi, Toyota and more.">
     <meta property="og:image" content="https://i.ibb.co/27qbD3hQ/Chat-GPT-Image-Aug-31-2025-01-08-03-AM.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.z1cars.com/">
+    <meta property="twitter:url" content="https://www.z1cars.in">
     <meta property="twitter:title" content="Z1 Cars - Premium Car Rental Services in Kerala">
     <meta property="twitter:description" content="Luxury car rental services in Kerala at affordable prices. Range Rover, BMW, Mercedes, Audi, Toyota and more.">
     <meta property="twitter:image" content="https://i.ibb.co/27qbD3hQ/Chat-GPT-Image-Aug-31-2025-01-08-03-AM.png">
@@ -32,8 +40,8 @@
       "@type": "CarRental",
       "name": "Z1 Cars",
       "image": "https://i.ibb.co/27qbD3hQ/Chat-GPT-Image-Aug-31-2025-01-08-03-AM.png",
-      "@id": "https://www.z1cars.com",
-      "url": "https://www.z1cars.com",
+      "@id": "https://www.z1cars.in",
+      "url": "https://www.z1cars.in",
       "telephone": "+919645177177",
       "address": {
         "@type": "PostalAddress",
@@ -1426,5 +1434,46 @@
         // Initial load
         generateCarCards(carData);
     </script>
+<!-- Book Now Floating Button -->
+<a href="book.html" class="book-now-float">
+  <i class="fas fa-calendar-check"></i> Book Now
+</a>
+
+<style>
+  .book-now-float {
+    position: fixed;
+    bottom: 90px; /* Positioned above WhatsApp button */
+    right: 20px;
+    background: var(--champagne-gold);
+    color: var(--matte-black);
+    padding: 12px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .book-now-float:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  .book-now-float i {
+    margin-right: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .book-now-float {
+      padding: 10px 16px;
+      font-size: 0.9rem;
+    }
+  }
+</style>
 </body>
+
 </html>
